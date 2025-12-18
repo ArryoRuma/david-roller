@@ -3,7 +3,7 @@ import pandas as pd
 
 @st.cache_data(ttl=300)  # Cache it for 5 minutes
 def load_data():
-    df = pd.read_csv("/Users/larryontruman/Desktop/Coding/5_Experiments/dave-roller/Roller Coaster Credits - Davids Credit Count.csv")
+    df = pd.read_csv("credits.csv")
     return df
 
 df = load_data()

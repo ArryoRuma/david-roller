@@ -9,7 +9,7 @@ st.set_page_config(page_title="Ranked by Design & Style", layout="wide")
 # Load and clean data
 
 def load_data():
-    df = pd.read_csv("/Users/larryontruman/Desktop/Coding/5_Experiments/dave-roller/Roller Coaster Credits - Davids Credit Count.csv")
+    df = pd.read_csv("credits.csv")
     df.columns = df.columns.str.strip().str.replace(' ', '_').str.replace('#', 'num')
     score_cols = ['Airtime', 'Speed', 'Pacing', 'First_Drop/Launch', 'Smoothness', 'Intensity', 'Overall']
     for col in score_cols:
